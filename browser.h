@@ -2,21 +2,28 @@
 #define BROWSER_H
 
 #include <QMainWindow>
+//#include <QSqlDatabase>
+//#include <QSqlField>
+#include <QtSql>
 
 namespace Ui {
-    class browser;
+    class Browser;
 }
 
-class browser : public QMainWindow
+class Browser : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit browser(QWidget *parent = 0);
-    ~browser();
+    explicit Browser(QWidget *parent = 0);
+    ~Browser();
 
 private:
-    Ui::browser *ui;
+    Ui::Browser *ui;
+    QSqlQueryModel *model;
+
+private slots:
+    void on_lineEdit_returnPressed();
 };
 
 #endif // BROWSER_H

@@ -1,12 +1,15 @@
 #include <QtGui/QApplication>
+//#include <QtSql/QIBaseDriver>
+//#include <QtSql/QDB2Driver>
+//#include <QtSql/QMYSQLDriver>
 #include "browser.h"
+//#include <QtSql>
 
 int main(int argc, char *argv[])
-{
+{    
     QApplication a(argc, argv);
-    browser w;
+    Browser w;
     w.show();
-//    sdfilghvsdihffhsdi;
 
     return a.exec();
 }

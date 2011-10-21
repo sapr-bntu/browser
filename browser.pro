@@ -1,12 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2011-10-14T16:39:25
+# Project created by QtCreator 2011-09-27T13:46:02
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui core webkit
+QT       += sql
+QT       += gui sql svg
 
-TARGET = browser
+TARGET = Browser
 TEMPLATE = app
 
 
