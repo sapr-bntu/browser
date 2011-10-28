@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Browser</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/img/logo2.bmp</normaloff>:/img/logo2.bmp</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.488, y1:0, x2:0.497, y2:1,
 stop:0 rgba(181, 177, 177, 255), 
@@ -453,7 +457,13 @@ border:1px solid black;
    <addaction name="menu_5"/>
    <addaction name="menu_6"/>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
+  <widget class="QToolBar" name="toolBar">
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
@@ -767,11 +777,13 @@ border:1px solid black;
  <customwidgets>
   <customwidget>
    <class>QWebView</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header>QtWebKit/QWebView</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>pushButton</sender>

@@ -2,9 +2,8 @@
 #define BROWSER_H
 
 #include <QMainWindow>
-//#include <QSqlDatabase>
-//#include <QSqlField>
 #include <QtSql>
+#include <QSystemTrayIcon>
 
 namespace Ui {
     class Browser;
@@ -19,11 +18,17 @@ public:
     ~Browser();
 
 private:
+    QSystemTrayIcon *trIcon;
     Ui::Browser *ui;
     QSqlQueryModel *model;
 
 private slots:
     void on_lineEdit_returnPressed();
+
+
+    void showHide(QSystemTrayIcon::ActivationReason);
 };
+
+
 
 #endif // BROWSER_H

@@ -1,12 +1,19 @@
 #include "browser.h"
-#include "connect.h"
+//#include "connect.h"
 #include "ui_browser.h"
+
 
 Browser::Browser(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Browser)
 {
     ui->setupUi(this);
+    trIcon = new QSystemTrayIcon();
+    trIcon->setIcon(QIcon(":/img/logo2.bmp"));
+    trIcon->show();
+
+    connect(trIcon,SIGNAL(activated(QSystemTrayIcon::ActivationReason)),this,SLOT(showHide(QSystemTrayIcon::ActivationReason)));
+
     this->showMaximized();
     this->on_lineEdit_returnPressed();
 
@@ -35,4 +42,14 @@ void Browser::on_lineEdit_returnPressed()
     QUrl url(url_str);
     this->ui->webView->load(url);
 
+}
+
+
+void Browser::showHide(QSystemTrayIcon::ActivationReason r) {
+    if (r==QSystemTrayIcon::Trigger)
+    if (!this->isVisible()) {
+       this->show();
+    } else {
+       this->hide();
+    }
 }

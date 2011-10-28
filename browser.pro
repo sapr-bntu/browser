@@ -18,3 +18,10 @@ SOURCES += main.cpp\
 HEADERS  += browser.h
 
 FORMS    += browser.ui
+
+OTHER_FILES += \
+    Ресурсы.txt \
+    logo2.bmp
+
+RESOURCES += \
+    res.qrc
