@@ -21,12 +21,16 @@ private:
     QSystemTrayIcon *trIcon;
     Ui::Browser *ui;
     QSqlQueryModel *model;
+    QString url_str;
+    QString lineEditText;
 
 private slots:
+    void on_comboBox_activated(QString );
+    void on_lineEdit_textChanged(QString );
     void on_lineEdit_returnPressed();
-
-
     void showHide(QSystemTrayIcon::ActivationReason);
+    void on_pushButton_clicked();
+    void linkchange(const QUrl & url);
 };
 
 

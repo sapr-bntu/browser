@@ -8,10 +8,11 @@
 
 int main(int argc, char *argv[])
 {    
-     QApplication a(argc, argv);
-    Browser w;
-    w.show();
-    QApplication::setQuitOnLastWindowClosed(false);
+    QApplication a(argc, argv);
+    Browser *w=new Browser;
+    w->show();
+    QApplication::setQuitOnLastWindowClosed(true);
     return a.exec();
-
 }
+
+

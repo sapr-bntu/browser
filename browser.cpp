@@ -18,13 +18,10 @@ Browser::Browser(QWidget *parent) :
     this->on_lineEdit_returnPressed();
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("sites.s3db");
+    db.setDatabaseName("browser.s3db");
     db.open();
-    QSqlTableModel *model;
-    model= new QSqlTableModel (this);
-    model->setTable("sites");
-    model->select();
-    //ui->tableView->setModel(model);
+    //qDebug()<<"Error in opening database"<<db.lastError().text();
+    connect(ui->webView,SIGNAL(urlChanged(QUrl)),this,SLOT(linkchange(QUrl)));
 
 }
 
@@ -35,21 +32,60 @@ Browser::~Browser()
 
 void Browser::on_lineEdit_returnPressed()
 {
-    QString url_str = this->ui->lineEdit->text();
+    url_str = this->ui->lineEdit->text();
     if (!url_str.startsWith("http://")){
-    url_str = "http://"+url_str;
+    url_str = "http://" + url_str;
     }
     QUrl url(url_str);
     this->ui->webView->load(url);
-
 }
-
 
 void Browser::showHide(QSystemTrayIcon::ActivationReason r) {
     if (r==QSystemTrayIcon::Trigger)
-    if (!this->isVisible()) {
+    if (!this->isVisible())
+        {
        this->show();
     } else {
        this->hide();
     }
+}
+
+
+void Browser::on_pushButton_clicked()
+{
+//    ui->lineEdit->setText(url_str);
+}
+void Browser::linkchange(const QUrl &url)
+{
+    ui->lineEdit->setText(url.toString());
+    QSqlQuery query;
+    query.exec("SELECT * FROM sites WHERE name LIKE '%"+url.toString()+"%'");
+    if (!query.next())
+    {
+        query.exec("INSERT INTO sites(name) VALUES ('"+url.toString()+"')");
+    }
+
+}
+
+void Browser::on_lineEdit_textChanged(QString lineEditText)
+{
+    ui->comboBox->clear();
+    lineEditText=ui->lineEdit->text();
+    QSqlQuery query;
+    query.exec("SELECT * FROM sites WHERE name LIKE '%"+lineEditText+"%'");
+    while (query.next())
+    {
+        //ui->comboBox->addItem(str(query.value(1)));
+        ui->comboBox->addItem((query.value(1).toString()));
+        //lineEditText=ui->comboBox->currentText();
+        //ui->lineEdit->setText(lineEditText);
+    }
+    //query.exec("INSERT INTO sites")
+}
+
+
+
+void Browser::on_comboBox_activated(QString fff)
+{
+    ui->lineEdit->setText(fff);
 }
