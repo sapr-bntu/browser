@@ -10,11 +10,10 @@ private slots:
 
 void Test_QLineEdit::edit()
 {
-    QLineEdit txt;
-    QTest::keyClicks(&txt, "ABCDEFGH");
-
-    QCOMPARE(txt.text(), QString("ABCDEFGH"));
-    QVERIFY(txt.isModified());
+        QLineEdit lineEdit;
+         QTest::keyClicks(&lineEdit, "http://filestore.com.ua");
+         QCOMPARE(lineEdit.text(), QString("http://filestore.co.ua"));
+         QVERIFY(lineEdit.isModified());
 }
 
 QTEST_MAIN(Test_QLineEdit)
