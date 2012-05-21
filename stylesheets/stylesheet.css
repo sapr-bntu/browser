@@ -361,7 +361,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #0080C0;
+  background: teal;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
@@ -371,7 +371,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #ffffff;
+  background: red;
 }
 
 
