@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/x.bmp</file>
+        <file>img/x2.bmp</file>
+        <file>img/batton_right2.bmp</file>
+        <file>img/button_left2.bmp</file>
+        <file>img/left.bmp</file>
+        <file>img/logo2.bmp</file>
+        <file>img/logo3.bmp</file>
+        <file>img/right.bmp</file>
+        <file>img/update.bmp</file>
+        <file>img/update4.bmp</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,140 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'tst_test2test.cpp'
+**
+** Created: Fri 1. Jun 17:44:19 2012
+**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.0)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'tst_test2test.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.0. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_Test2Test[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      19,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      11,   10,   10,   10, 0x08,
+      26,   10,   10,   10, 0x08,
+      44,   10,   10,   10, 0x08,
+      56,   10,   10,   10, 0x08,
+      75,   10,   10,   10, 0x08,
+      97,   10,   10,   10, 0x08,
+     116,   10,   10,   10, 0x08,
+     137,   10,   10,   10, 0x08,
+     155,   10,   10,   10, 0x08,
+     175,   10,   10,   10, 0x08,
+     208,   10,   10,   10, 0x08,
+     243,   10,   10,   10, 0x08,
+     280,   10,   10,   10, 0x08,
+     313,   10,   10,   10, 0x08,
+     336,   10,   10,   10, 0x08,
+     359,   10,   10,   10, 0x08,
+     380,   10,   10,   10, 0x08,
+     403,   10,   10,   10, 0x08,
+     419,   10,   10,   10, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Test2Test[] = {
+    "Test2Test\0\0initTestCase()\0cleanupTestCase()\0"
+    "testCase1()\0GetWebKitVersion()\0"
+    "UrlWithoutDomenTest()\0UrlWithDomenTest()\0"
+    "UrlWithoutHTTPTest()\0UrlWithHTTPTest()\0"
+    "ComboboxClearTest()\0"
+    "on_comboBox_activatedCheckTest()\0"
+    "on_lineEdit_textChangedCheckTest()\0"
+    "on_lineEdit_returnPressedCheckTest()\0"
+    "on_pushButton_clickedCheckTest()\0"
+    "exitBrowserCheckTest()\0TrayBrowserCheckTest()\0"
+    "helpAboutCheckTest()\0helpAboutQtCheckTest()\0"
+    "OpenCheckTest()\0saveCheckTest()\0"
+};
+
+void Test2Test::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        Test2Test *_t = static_cast<Test2Test *>(_o);
+        switch (_id) {
+        case 0: _t->initTestCase(); break;
+        case 1: _t->cleanupTestCase(); break;
+        case 2: _t->testCase1(); break;
+        case 3: _t->GetWebKitVersion(); break;
+        case 4: _t->UrlWithoutDomenTest(); break;
+        case 5: _t->UrlWithDomenTest(); break;
+        case 6: _t->UrlWithoutHTTPTest(); break;
+        case 7: _t->UrlWithHTTPTest(); break;
+        case 8: _t->ComboboxClearTest(); break;
+        case 9: _t->on_comboBox_activatedCheckTest(); break;
+        case 10: _t->on_lineEdit_textChangedCheckTest(); break;
+        case 11: _t->on_lineEdit_returnPressedCheckTest(); break;
+        case 12: _t->on_pushButton_clickedCheckTest(); break;
+        case 13: _t->exitBrowserCheckTest(); break;
+        case 14: _t->TrayBrowserCheckTest(); break;
+        case 15: _t->helpAboutCheckTest(); break;
+        case 16: _t->helpAboutQtCheckTest(); break;
+        case 17: _t->OpenCheckTest(); break;
+        case 18: _t->saveCheckTest(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Test2Test::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Test2Test::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_Test2Test,
+      qt_meta_data_Test2Test, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Test2Test::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Test2Test::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Test2Test::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Test2Test))
+        return static_cast<void*>(const_cast< Test2Test*>(this));
+    return QObject::qt_metacast(_clname);
+}
+
+int Test2Test::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 19)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 19;
+    }
+    return _id;
+}
+QT_END_MOC_NAMESPACE

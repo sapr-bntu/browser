@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Browser</class>
+ <widget class="QMainWindow" name="Browser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.488000000000000" starty="0.000000000000000" endx="0.497000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>181</red>
+          <green>177</green>
+          <blue>177</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>69</red>
+          <green>64</green>
+          <blue>64</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>Browser</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Browser fin/browser/res.qrc">
+    <normaloff>:/img/img/logo2.bmp</normaloff>:/img/img/logo2.bmp</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.488, y1:0, x2:0.497, y2:1,
+stop:0 rgba(181, 177, 177, 255), 
+stop:1 rgba(69, 64, 64, 255));
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+background-color: qlineargradient(spread:pad, x1:0.488, y1:0, x2:0.497, y2:1,
+stop:0 rgba(170, 164,164, 255), 
+stop:1 rgba(69, 64, 64, 255));
+border-bottom:1px solid rgb(79,101,125);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>33</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+
+border-radius: 5px;
+background-image: url(:/img/img/button_left2.bmp);
+
+}
+
+QPushButton:hover{
+ border: none;
+ background-image: url(:/img/img/left.bmp);
+}
+
+QPushButton:hover:pressed {
+ border: none;
+ background-image: url(:/img/img/left.bmp);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="minimumSize">
+          <size>
+           <width>33</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>33</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+
+border-radius: 5px;
+ background-image: url(:/img/img/batton_right2.bmp);
+}
+
+QPushButton:hover{
+ border: none;
+ background-image: url(:/img/img/right.bmp);
+}
+
+QPushButton:hover:pressed {
+ border: none;
+ background-image: url(:/img/img/right.bmp);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="minimumSize">
+          <size>
+           <width>33</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+
+border-radius: 5px;
+ background-image: url(:/img/img/update4.bmp);
+}
+
+QPushButton:hover{
+ border: none;
+ background-image: url(:/img/img/update.bmp);
+}
+
+QPushButton:hover:pressed {
+ border: none;
+ background-image: url(:/img/img/update.bmp);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+background-color: rgb(255, 255, 255);
+border: 1px solid #707070;
+border-radius: 3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>http://www.bash.org.ru</string>
+         </property>
+         <property name="maxLength">
+          <number>400</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="minimumSize">
+          <size>
+           <width>21</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>21</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+
+border-radius: 5px;
+ background-image: url(:/img/img/x.bmp);
+}
+
+QPushButton:hover{
+ border: none;
+ background-image: url(:/img/img/x2.bmp);
+}
+
+QPushButton:hover:pressed {
+ border: none;
+ background-image: url(:/img/img/x2.bmp);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>21</width>
+           <height>21</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWebView" name="webView"/>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>395</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar {
+border-bottom:1px solid rgb(0,0,0);
+border-top:1px solid rgb(0,0,0);
+border-left:1px solid rgb(0,0,0);
+border-right:1px solid rgb(0,0,0);
+text-align:center;
+background-color: rgba(0, 0, 0, 0);
+}
+
+QProgressBar::chunk {
+background-color: qlineargradient(spread:pad, x1:0.488, y1:0,
+x2:0.497, y2:1, stop:0 #85B3E8, stop:1 #3067a5);
+width: 9px;
+margin: 1px;
+margin-right:0px;
+padding:1px;
+border:1px solid black;
+}
+</string>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="textDirection">
+       <enum>QProgressBar::TopToBottom</enum>
+      </property>
+      <property name="format">
+       <string>%p%</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>639</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>menu</string>
+    </property>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionBack"/>
+    <addaction name="actionForward"/>
+    <addaction name="actionReload"/>
+    <addaction name="actionStop"/>
+    <addaction name="separator"/>
+    <addaction name="actionTray"/>
+    <addaction name="actionOpen_2"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_QT"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="text">
+    <string>Создать вкладку</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Создать окно</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Открвть</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Открыть...</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Добавить вкладку</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Сохранить как...</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>Сеансы</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>Импорт и экспорт</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>Печать</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>Параметры печати</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>Просмотр печати</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>Синхронизировать</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>Работать автономно</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>Отменить</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>Вернуть</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>Вырезать</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>Копировать в заметки</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>Выбрать все</string>
+   </property>
+  </action>
+  <action name="action_31">
+   <property name="text">
+    <string>Проверить орфографию</string>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="text">
+    <string>Найти</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>Найти следующее</string>
+   </property>
+  </action>
+  <action name="action_37">
+   <property name="text">
+    <string>Панели</string>
+   </property>
+  </action>
+  <action name="action_38">
+   <property name="text">
+    <string>Главная панель</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>Личная панель</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>Панель вкладок</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>Панель состояния</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>Панель адреса</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>Панель навигации</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>Настроить...</string>
+   </property>
+  </action>
+  <action name="action50">
+   <property name="text">
+    <string>50%</string>
+   </property>
+  </action>
+  <action name="action80">
+   <property name="text">
+    <string>80%</string>
+   </property>
+  </action>
+  <action name="action90">
+   <property name="text">
+    <string>90%</string>
+   </property>
+  </action>
+  <action name="action100">
+   <property name="text">
+    <string>100%</string>
+   </property>
+  </action>
+  <action name="action120">
+   <property name="text">
+    <string>120%</string>
+   </property>
+  </action>
+  <action name="action150">
+   <property name="text">
+    <string>150%</string>
+   </property>
+  </action>
+  <action name="action200">
+   <property name="text">
+    <string>200%</string>
+   </property>
+  </action>
+  <action name="action_100">
+   <property name="text">
+    <string>-100%</string>
+   </property>
+  </action>
+  <action name="action_101">
+   <property name="text">
+    <string>+100%</string>
+   </property>
+  </action>
+  <action name="action_50">
+   <property name="text">
+    <string>-10%</string>
+   </property>
+  </action>
+  <action name="action_51">
+   <property name="text">
+    <string>+10%</string>
+   </property>
+  </action>
+  <action name="action_52">
+   <property name="text">
+    <string>Изображения</string>
+   </property>
+  </action>
+  <action name="action_56">
+   <property name="text">
+    <string>Стиль</string>
+   </property>
+  </action>
+  <action name="action_57">
+   <property name="text">
+    <string>Кодировка</string>
+   </property>
+  </action>
+  <action name="action_59">
+   <property name="text">
+    <string>Исходный код</string>
+   </property>
+  </action>
+  <action name="action_61">
+   <property name="text">
+    <string>Маленький экран</string>
+   </property>
+  </action>
+  <action name="action_62">
+   <property name="text">
+    <string>Подогнать по ширине</string>
+   </property>
+  </action>
+  <action name="action_63">
+   <property name="text">
+    <string>Во весь экран</string>
+   </property>
+  </action>
+  <action name="action_64">
+   <property name="text">
+    <string>Создать закладку страницы...</string>
+   </property>
+  </action>
+  <action name="action_65">
+   <property name="text">
+    <string>Управление закладками...</string>
+   </property>
+  </action>
+  <action name="action_67">
+   <property name="text">
+    <string>Добавить виджеты</string>
+   </property>
+  </action>
+  <action name="action_68">
+   <property name="text">
+    <string>Управление виджетами</string>
+   </property>
+  </action>
+  <action name="action_69">
+   <property name="text">
+    <string>Заметки</string>
+   </property>
+  </action>
+  <action name="action_70">
+   <property name="text">
+    <string>Загрузки</string>
+   </property>
+  </action>
+  <action name="action_71">
+   <property name="text">
+    <string>Истории </string>
+   </property>
+  </action>
+  <action name="action_72">
+   <property name="text">
+    <string>Ссылки</string>
+   </property>
+  </action>
+  <action name="action_73">
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+  </action>
+  <action name="action_75">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="text">
+    <string>back</string>
+   </property>
+  </action>
+  <action name="actionForward">
+   <property name="text">
+    <string>forward</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="text">
+    <string>reload</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="text">
+    <string>stop</string>
+   </property>
+  </action>
+  <action name="actionTray">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About...</string>
+   </property>
+  </action>
+  <action name="actionAbout_QT">
+   <property name="text">
+    <string>About QT</string>
+   </property>
+  </action>
+  <action name="actionOpen_2">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>66</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>forward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>107</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>620</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>webView</sender>
+   <signal>loadProgress(int)</signal>
+   <receiver>progressBar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpen</sender>
+   <signal>changed()</signal>
+   <receiver>Browser</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionClose</sender>
+   <signal>changed()</signal>
+   <receiver>Browser</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionForward</sender>
+   <signal>changed()</signal>
+   <receiver>webView</receiver>
+   <slot>forward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBack</sender>
+   <signal>changed()</signal>
+   <receiver>webView</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionReload</sender>
+   <signal>changed()</signal>
+   <receiver>webView</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStop</sender>
+   <signal>changed()</signal>
+   <receiver>webView</receiver>
+   <slot>stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTray</sender>
+   <signal>changed()</signal>
+   <receiver>Browser</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
